@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GDC NEHU
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="gdc.css">
+        <script src="https://kit.fontawesome.com/0d194b00b9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav-section">
+                <div class="div1-img">  
+                </div>
+
+                <div class="div2-list">
+                    <ul>
+                        <li class="li-hidden">Home</li>
+                        <li class="li-hidden"><a href="#Contact" style="text-decoration: none;color:black">Contact</a></li>
+                        <li class="about-us li-hidden"><a href="./loginpage/login.html" style="text-decoration: none;color:black"><i class="fa-solid fa-user" style="margin-right: 4px;"></i>About us</a></li>
+                        <li><button type="button"></button></li>
+                    </ul>
+                    <button class="main-header-button"><i class="fa-solid fa-bars"></i></button>
+                </div>               
+            </nav>
+        </header>
+
+        <main>
+            <div class="slider-box">
+                <div id="slider">
+                    <div style="width:100%"><img src="./image/image1.png" alt="image1"></div>
+                    <div style="width:100%"><img src="./image/image2.png" alt="image2"></div>
+                    <div style="width:100%"><img src="./image/image3.png" alt="image3"></div>
+                    <div style="width:100%" ><img src="./image/image4.png" alt="image4"></div>
+                    <div style="width:100%"><img src="./image/image5.png" alt="image5"></div>
+
+                </div>
+                <div class="indicators">
+                    <span id="btn1" class="active" style="background-color: black;"></span>
+                    <span id="btn2" style="background-color: black;"></span>
+                    <span id="btn3" style="background-color: black;"></span>
+                    <span id="btn4" style="background-color: black;"></span>
+                    <span id="btn5" style="background-color: black;"></span>
+                </div>
+           </div>
+
+           <div class="about-us">
+
+           </div>
+        </main>
+
+        <footer>
+            <div class="social_media_container">
+                <div class="heading_section">
+                    <h3 class="footer_heading ">Connect with Us</h3>
+                </div>
+                <div class="social_icon_container"  id="contact-details">
+                    <div class="icons_container">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="icons_container">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="icons_container">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="icons_container">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <div class="icons_container">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="midsection">
+                <div class="midsesction_parta">
+                    <img src="./image/GDG23_IG_Sticker_01_v01.gif" alt="GDG" sizes="" srcset="" class="footer_img">
+                </div>
+                <div class="midscection_partb">
+                    <div class="contact_us_section">
+                        <div>
+                            <span class="contact_us_lable">WhatsApp : </span> <span class="contact_us_contnet"><a href="https://chat.whatsapp.com/ESYjhdzSWoNB5UQ64YRPnL">Join WhatsApp Group</a></span> 
+                        </div>
+                        <div>
+                            <span class="contact_us_lable">Email : </span> <span class="contact_us_contnet"><a href="mailto:Shekharpachlore@gmail.com">Shekharpachlore@gmail.com</a></span> 
+                        </div>
+                        <div>
+                            <span class="contact_us_lable">Google Form : </span> <span class="contact_us_contnet"><a href="https://forms.gle/2fxdQq7zfDhqK6SVA" target="_blank" rel="noopener noreferrer">Google form</a></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_section">
+                <p>© 2024 GDG NEHU. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+             var slide = document.getElementById("slider");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+            var btn4 = document.getElementById("btn4");
+            var btn5 = document.getElementById("btn5");
+
+            btn1.onclick = function(){
+                slide.style.transform = "translateX(0px)";
+                btn1.classList.add("active");
+                btn2.classList.remove("active");
+                btn3.classList.remove("active");
+                btn4.classList.remove("active");
+                btn5.classList.remove("active");
+            }
+            btn2.onclick = function(){
+                slide.style.transform = "translateX(-100%)";
+                btn1.classList.remove("active");
+                btn2.classList.add("active");
+                btn3.classList.remove("active");
+                btn4.classList.remove("active");
+                btn5.classList.remove("active");
+            }
+            btn3.onclick = function(){
+                slide.style.transform = "translateX(-200%)";
+                btn1.classList.remove("active");
+                btn2.classList.remove("active");
+                btn3.classList.add("active");
+                btn4.classList.remove("active");
+                btn5.classList.remove("active");
+            }
+            btn4.onclick = function(){
+                slide.style.transform = "translateX(-300%)";
+                btn1.classList.remove("active");
+                btn2.classList.remove("active");
+                btn3.classList.remove("active");
+                btn4.classList.add("active");
+            }
+            btn5.onclick = function(){
+                slide.style.transform = "translateX(-400%)";
+                btn1.classList.remove("active");
+                btn2.classList.remove("active");
+                btn3.classList.remove("active");
+                btn4.classList.remove("active");
+                btn5.classList.add("active");
+            } 
+        </script>
+    </body>
+</html>
